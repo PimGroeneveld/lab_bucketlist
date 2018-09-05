@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Bucketlist</title>
-    <script scr = "/js/bundle.js"></script>
+    <script src = "/js/bundle.js"></script>
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
@@ -17,10 +17,14 @@
           <input type="text" id="name"/>
         </div>
         <div>
-          <label for="status">Status:</label>
-          <input type="radio" id="status"/>
+          <div class="form-item">
+         <label for="status" class="primary">Completed? </label>
+         <br>
+           <input type="radio" name="status" value="true" > True<br>
+           <input type="radio" name="status" value="false"> False<br>
+         </div>
         </div>
-
+<!--  -->
         <input type="submit" id="name" value="save"/>
       </form>
       </div>
