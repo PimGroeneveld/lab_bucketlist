@@ -17,7 +17,7 @@ BucketListFormView.prototype.handleSubmit = function (evt) {
   evt.target.reset();
 };
 
-SBucketListFormView.prototype.createBucketList = function (form) {
+BucketListFormView.prototype.createBucketList = function (form) {
   const newBucketList = {
     name: form.name.value,
     status: form.status.value,

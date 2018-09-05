@@ -3,6 +3,7 @@ const BucketListView = require('./bucketlist_view.js');
 
 const BucketListGridView = function (container) {
   this.container = container;
+
 };
 
 BucketListGridView.prototype.bindEvents = function () {
