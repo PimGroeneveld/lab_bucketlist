@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Bucketlist</title>
-    <script src = "/js/bundle.js"></script>
-    <link rel="stylesheet" href="/css/main.css">
-  </head>
-  <body>
-    <h1>Bucketlist of things to do before I am old and grey</h1>
-    <div class="form-wrapper">
-      <div class="form">
-        <h2>Add a bucketlist item:</h2>
-        <form id=bucketlist-form>
+<head>
+  <meta charset="utf-8">
+  <title>Bucketlist</title>
+  <script src = "/js/bundle.js"></script>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <h1>Bucketlist of things to do before I am old and grey</h1>
+  <div class="form-wrapper">
+    <div class="form-item">
+      <h2>Add a bucketlist item:</h2>
+      <form id="bucketlist-form">
         <div>
           <label for="name">Name of bucketlist item:</label>
           <input type="text" id="name"/>
         </div>
-        <div>
-          <div class="form-item">
-         <label for="status" class="primary">Completed? </label>
-         <br>
-           <input type="radio" name="status" value="true" > True<br>
-           <input type="radio" name="status" value="false"> False<br>
-         </div>
-        </div>
-<!--  -->
-        <input type="submit" id="name" value="save"/>
-      </form>
-      </div>
-      <h2>Bucketlist:</h2>
-      <div id="bucketlist-printed"></div>
-    </div>
 
-  </body>
+        <div class="form-item">
+          <label for="completed" class="primary">Completed? </label>
+          <br>
+          <input type="radio" name="completed" value="true" > True<br>
+          <input type="radio" name="completed" value="false"> False<br>
+        </div>
+
+        <input type="submit" id="submit" value="save"/>
+      </form>
+    </div>
+    <h2>Bucketlist:</h2>
+    <div id="bucketlist-printed"></div>
+  </div>
+
+</body>
 </html>

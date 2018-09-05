@@ -1,4 +1,4 @@
-use bucketListItems;
+use bucketList;
 db.dropDatabase();
 
 db.listItems.insertMany([

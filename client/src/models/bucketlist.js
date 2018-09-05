@@ -6,7 +6,6 @@ const BucketList = function (url) {
   this.request = new Request(this.url);
 };
 
-
 BucketList.prototype.bindEvents = function() {
   PubSub.subscribe('BucketListView:bucketlist-submitted', (evt) => {
     this.postBucketList(evt.detail);

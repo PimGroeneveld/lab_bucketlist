@@ -12,10 +12,10 @@ BucketListGridView.prototype.bindEvents = function () {
   })
 };
 
-BucketListGridView.prototype.render = function (bucketlist) {
+BucketListGridView.prototype.render = function (bucketlistItems) {
   this.container.innerHTML = '';
   const bucketlistView = new BucketListView(this.container);
-  bucketlist.forEach((bucketlist) => {
+  bucketlistItems.forEach((bucketlist) => {
     bucketlistView.render(bucketlist)
   })
 };

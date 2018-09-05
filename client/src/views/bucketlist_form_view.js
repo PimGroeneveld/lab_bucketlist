@@ -13,16 +13,16 @@ BucketListFormView.prototype.bindEvents = function () {
 BucketListFormView.prototype.handleSubmit = function (evt) {
   evt.preventDefault();
   const newBucketList = this.createBucketList(evt.target);
-  PubSub.publish('SightingView:sighting-submitted', newSighting);
+  PubSub.publish('BucketListView:bucketlist-submitted', newBucketList);
   evt.target.reset();
 };
 
 BucketListFormView.prototype.createBucketList = function (form) {
   const newBucketList = {
     name: form.name.value,
-    status: form.status.value,
+    completed: form.completed.value
   };
-
+  console.log("form", form);
   return newBucketList;
 };
 
