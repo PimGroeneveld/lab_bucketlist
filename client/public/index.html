@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bucketlist</title>
+    <script scr = "/js/bundle.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <h1>Bucketlist of things to do before I am old and grey</h1>
+    <div class="form-wrapper">
+      <div class="form">
+        <h2>Add a bucketlist item:</h2>
+        <form id=bucketlist-form>
+        <div>
+          <label for="name">Name of bucketlist item:</label>
+          <input type="text" id="name"/>
+        </div>
+        <div>
+          <label for="status">Status:</label>
+          <input type="radio" id="status"/>
+        </div>
+
+        <input type="submit" id="name" value="save"/>
+      </form>
+      </div>
+      <h2>Bucketlist:</h2>
+      <div id="bucketlist-printed"></div>
+    </div>
+
+  </body>
+</html>

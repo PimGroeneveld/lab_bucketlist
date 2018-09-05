@@ -1,0 +1,29 @@
+{
+  "name": "lab_bucketlist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:dev": "nodemon server/server.js",
+    "build": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PimGroeneveld/lab_bucketlist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PimGroeneveld/lab_bucketlist/issues"
+  },
+  "homepage": "https://github.com/PimGroeneveld/lab_bucketlist#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongo": "^0.1.0",
+    "nodemon": "^1.18.4",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
